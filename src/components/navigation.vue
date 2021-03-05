@@ -2,14 +2,14 @@
   <div>
     <b-navbar class="fixed-top" type="dark" variant="dark">
       <b-navbar-brand href="/">
-        <img
-          src="../assets/home-5-fill.png"
-          class="d-inline-block align-top"
-        />
+        <img src="../assets/home-5-fill.png" class="d-inline-block align-top" />
         Home
       </b-navbar-brand>
       <!-- Left aligned nav items -->
       <b-navbar-nav>
+        <a href="/files/Oscar-Lou-Resume-2021.pdf" target="_blank"
+          ><b-button variant="outline-light">Resume </b-button></a
+        >
         <!--<b-nav-item href="#about">About</b-nav-item>-->
       </b-navbar-nav>
       <!-- Right aligned nav items -->

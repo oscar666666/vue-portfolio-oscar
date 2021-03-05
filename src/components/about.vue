@@ -14,6 +14,7 @@
             understands the importance of communicating with colleagues and
             users during the life cycle of software projects.
           </p>
+          <br /><br /><br />
           <h3 id="contactme" align="left">Contact me:</h3>
           <b-row class="text-md-center">
             <b-col md="2" class="mb-3">
@@ -91,23 +92,29 @@
                     alt="Leetcode"
                     style="width:55px;height:55px;"
                     color="black"
-                  >
-               
+                  />
+
                   <img
                     v-else
                     src="../assets/cib-leetcode.svg"
                     alt="Leetcode"
                     style="width:42px;height:42px;"
                     color="black"
-                  >
-                 
+                  />
                 </a>
               </div>
-              
             </b-col>
           </b-row>
         </b-col>
-        <b-col cols="4"></b-col>
+        <b-col cols="4">
+          <img
+            src="../assets/693952main_pia15817-full_full.jpg"
+            alt="profile image"
+            style="width:50vh;height:60vh;"
+            top="50%"
+            left="50%"
+          />
+        </b-col>
         <b-col></b-col>
       </b-row>
     </div>
@@ -136,7 +143,7 @@ h1 {
   text-align: left;
 }
 .container {
-  font-weight: bold;
+  font-weight: normal;
 }
 #header {
   height: 15vh;
@@ -160,7 +167,6 @@ export default {
   methods: {
     handleHover0(hovered) {
       this.isHovered0 = hovered;
-      
     },
     handleHover1(hovered) {
       this.isHovered1 = hovered;
