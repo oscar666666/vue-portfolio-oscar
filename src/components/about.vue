@@ -1,12 +1,14 @@
 <template>
   <div id="about">
     <div class="container">
-      <h1>Placeholder</h1>
+      <br /><br /><br />
+      <br />
       <!-- this is covered by top navbar -->
       <b-row>
         <b-col></b-col>
         <b-col cols="6"
           ><h2 id="section-title">0. About me</h2>
+           <br />
           <p id="introduce-text" align="left">
             Hello! I'm Oscar, a software developer. I am extremely passionate
             about software development and applies scientific knowledge to
@@ -14,7 +16,7 @@
             understands the importance of communicating with colleagues and
             users during the life cycle of software projects.
           </p>
-          <br /><br /><br />
+          <br /><br />
           <h3 id="contactme" align="left">Contact me:</h3>
           <b-row class="text-md-center">
             <b-col md="2" class="mb-3">
