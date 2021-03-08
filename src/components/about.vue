@@ -4,11 +4,10 @@
       <br /><br /><br />
       <br />
       <!-- this is covered by top navbar -->
-      <b-row>
-        <b-col></b-col>
-        <b-col cols="6"
-          ><h2 id="section-title">0. About me</h2>
-           <br />
+      <b-row align-h="center">
+        <b-col sm="8">
+          <h2 id="section-title">0. About me</h2>
+          <br />
           <p id="introduce-text" align="left">
             Hello! I'm Oscar, a software developer. I am extremely passionate
             about software development and applies scientific knowledge to
@@ -17,106 +16,107 @@
             users during the life cycle of software projects.
           </p>
           <br /><br />
-          <h3 id="contactme" align="left">Contact me:</h3>
-          <b-row class="text-md-center">
-            <b-col md="2" class="mb-3">
-              <div v-b-hover="handleHover0">
-                <a href="mailto:sseoscar4work@gmail.com">
-                  <b-icon
-                    v-if="isHovered0"
-                    icon="mailbox"
-                    alt="Email"
-                    style="width:55px;height:55px;"
-                    color="black"
-                  >
-                  </b-icon>
-                  <b-icon
-                    v-else
-                    icon="mailbox"
-                    alt="Email"
-                    style="width:42px;height:42px;"
-                    color="black"
-                  >
-                  </b-icon>
-                </a>
-              </div>
-            </b-col>
-            <b-col md="2" class="mb-3">
-              <div v-b-hover="handleHover1">
-                <a href="https://github.com/oscar666666">
-                  <b-icon
-                    v-if="isHovered1"
-                    icon="github"
-                    alt="Github"
-                    style="width:55px;height:55px;"
-                    color="black"
-                  >
-                  </b-icon>
-                  <b-icon
-                    v-else
-                    icon="github"
-                    alt="Github"
-                    style="width:42px;height:42px;"
-                    color="black"
-                  >
-                  </b-icon>
-                </a>
-              </div>
-            </b-col>
-            <b-col md="2" class="mb-3">
-              <div v-b-hover="handleHover2">
-                <a href="https://www.linkedin.com/in/sse-oscar-lou/">
-                  <b-icon
-                    v-if="isHovered2"
-                    icon="linkedin"
-                    alt="Linkedin"
-                    style="width:55px;height:55px;"
-                    color="black"
-                  >
-                  </b-icon>
-                  <b-icon
-                    v-else
-                    icon="linkedin"
-                    alt="Linkedin"
-                    style="width:42px;height:42px;"
-                    color="black"
-                  >
-                  </b-icon>
-                </a>
-              </div>
-            </b-col>
-            <b-col md="2" class="mb-3">
-              <div v-b-hover="handleHover3">
-                <a href="https://leetcode.com/oscar88feichang6/">
-                  <img
-                    v-if="isHovered3"
-                    src="../assets/cib-leetcode.svg"
-                    alt="Leetcode"
-                    style="width:55px;height:55px;"
-                    color="black"
-                  />
+        </b-col>
 
-                  <img
-                    v-else
-                    src="../assets/cib-leetcode.svg"
-                    alt="Leetcode"
-                    style="width:42px;height:42px;"
-                    color="black"
-                  />
-                </a>
-              </div>
-            </b-col>
-          </b-row>
-        </b-col>
-        <b-col cols="4">
-          <img
+        <b-col sm="4">
+          <b-img
             src="../assets/693952main_pia15817-full_full.jpg"
+            fluid-grow
             alt="profile image"
-            style="width:50vh;height:60vh;"
-            top="50%"
-            left="50%"
-          />
+          ></b-img>
         </b-col>
+
+        <h3 id="contactme" align="left">Contact me:</h3>
+        <b-row class="text-md-center">
+          <b-col md="2" class="mb-3">
+            <div v-b-hover="handleHover0">
+              <a href="mailto:sseoscar4work@gmail.com">
+                <b-icon
+                  v-if="isHovered0"
+                  icon="mailbox"
+                  alt="Email"
+                  style="width:55px;height:55px;"
+                  color="black"
+                >
+                </b-icon>
+                <b-icon
+                  v-else
+                  icon="mailbox"
+                  alt="Email"
+                  style="width:42px;height:42px;"
+                  color="black"
+                >
+                </b-icon>
+              </a>
+            </div>
+          </b-col>
+          <b-col md="2" class="mb-3">
+            <div v-b-hover="handleHover1">
+              <a href="https://github.com/oscar666666">
+                <b-icon
+                  v-if="isHovered1"
+                  icon="github"
+                  alt="Github"
+                  style="width:55px;height:55px;"
+                  color="black"
+                >
+                </b-icon>
+                <b-icon
+                  v-else
+                  icon="github"
+                  alt="Github"
+                  style="width:42px;height:42px;"
+                  color="black"
+                >
+                </b-icon>
+              </a>
+            </div>
+          </b-col>
+          <b-col md="2" class="mb-3">
+            <div v-b-hover="handleHover2">
+              <a href="https://www.linkedin.com/in/sse-oscar-lou/">
+                <b-icon
+                  v-if="isHovered2"
+                  icon="linkedin"
+                  alt="Linkedin"
+                  style="width:55px;height:55px;"
+                  color="black"
+                >
+                </b-icon>
+                <b-icon
+                  v-else
+                  icon="linkedin"
+                  alt="Linkedin"
+                  style="width:42px;height:42px;"
+                  color="black"
+                >
+                </b-icon>
+              </a>
+            </div>
+          </b-col>
+          <b-col md="2" class="mb-3">
+            <div v-b-hover="handleHover3">
+              <a href="https://leetcode.com/oscar88feichang6/">
+                <img
+                  v-if="isHovered3"
+                  src="../assets/cib-leetcode.svg"
+                  alt="Leetcode"
+                  style="width:55px;height:55px;"
+                  color="black"
+                />
+
+                <img
+                  v-else
+                  src="../assets/cib-leetcode.svg"
+                  alt="Leetcode"
+                  style="width:42px;height:42px;"
+                  color="black"
+                />
+              </a>
+            </div>
+          </b-col>
+        </b-row>
+
         <b-col></b-col>
       </b-row>
     </div>
@@ -125,11 +125,6 @@
 
 <style>
 html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
 h1 {
   text-align: left;
 }
@@ -148,10 +143,11 @@ h1 {
   font-weight: normal;
 }
 #header {
-  height: 15vh;
+  height: 15%;
 }
 #about {
-  height: 100vh;
+  height: 100%;
+  vertical-align: top;
   background-color: #343a40;
 }
 </style>
