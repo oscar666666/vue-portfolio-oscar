@@ -28,7 +28,7 @@ h1 {
 }
 #experience {
   height: 25vh;
-  background-color: #414346;
+  background-color: #343a40;
 }
 </style>
 <script>
