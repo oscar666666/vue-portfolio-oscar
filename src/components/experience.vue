@@ -1,11 +1,16 @@
 <template>
   <div id="experience">
     <div class="container">
-      <div id="header">
-        <h1>Under development</h1>
-      </div>
-      
-      
+      <b-row align-h="center">
+        <b-col sm="6">
+          <h2 id="section-title">1. Experience</h2>
+          <h1>Under development</h1>
+
+          <br />
+        </b-col>
+
+        <b-col sm="3"> </b-col>
+      </b-row>
     </div>
   </div>
 </template>

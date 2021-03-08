@@ -1,14 +1,23 @@
 <template>
   <div id="projects">
     <div class="container">
-        <br /><br /><br />
+      <br /><br /><br />
       <br />
-      <b-row>
-        <b-col></b-col>
-        <b-col cols="10"
-          ><h2 id="section-title">2. Projects</h2>
-          </b-col>
-          <b-col></b-col>
+      <b-row align-h="center">
+        <b-col sm="6">
+          <h2 id="section-title">2. Projects</h2>
+        </b-col>
+        <b-col sm="3"></b-col>
+      </b-row>
+      <b-row align-h="center">
+        <b-col sm="8">
+      <b-card bg-variant="dark" border-variant="info" text-variant="white" title="Card Title">
+        <b-card-text>
+{{ info }}        </b-card-text>
+        <b-button pill class="btn btn-theme float-right" size="sm" href="#">Go somewhere</b-button>
+      </b-card>
+              </b-col>
+
       </b-row>
     </div>
   </div>
@@ -45,31 +54,21 @@ h1 {
   height: 100vh;
   background-color: #343a40;
 }
+
 </style>
 <script>
+import axios from 'axios'
 export default {
-  name: "about",
+  name: "projects",
   data() {
     return {
-      isHovered0: false,
-      isHovered1: false,
-      isHovered2: false,
-      isHovered3: false,
+      info: null,
     };
   },
-  methods: {
-    handleHover0(hovered) {
-      this.isHovered0 = hovered;
-    },
-    handleHover1(hovered) {
-      this.isHovered1 = hovered;
-    },
-    handleHover2(hovered) {
-      this.isHovered2 = hovered;
-    },
-    handleHover3(hovered) {
-      this.isHovered3 = hovered;
-    },
+  mounted () {
+    axios
+      .get('https://api.github.com/users/oscar666666/repos')
+      .then(response => (this.info = response))
   },
   components: {},
 };
