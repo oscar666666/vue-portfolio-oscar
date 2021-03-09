@@ -20,7 +20,7 @@
 
         <b-col sm="3">
           <b-img
-            src="../assets/693952main_pia15817-full_full.jpg"
+            src="../assets/IMG_20200813_093058.png"
             rounded
             fluid-grow
             alt="profile image"

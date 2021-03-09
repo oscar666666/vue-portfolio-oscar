@@ -10,20 +10,32 @@
         <b-col sm="3"></b-col>
       </b-row>
       <b-row align-h="center">
-        <b-col sm="8">
-
+        <b-col sm="8"
+          ><!---->
           <b-card
+            class="repo-card"
             v-for="repo in repos"
             v-bind:key="repo.id"
             :title="repo.name"
-            :sub-title="repo.language"
+            :sub-title="
+              repo.language +
+                ' Watchers: ' +
+                repo.watchers_count +
+                '    Stars:  ' +
+                repo.stargazers_count
+            "
             bg-variant="dark"
             border-variant="info"
             text-variant="white"
+            align="left"
           >
             <b-card-text> {{ repo.description }} </b-card-text>
-            <b-button pill class="btn btn-theme float-right" size="sm" href="#"
-              >{{repo.id}}</b-button
+            <b-button
+              pill
+              class="btn btn-theme float-right"
+              size="sm"
+              :href="repo.html_url"
+              >Code</b-button
             >
           </b-card>
         </b-col>
@@ -55,6 +67,9 @@ h1 {
 }
 .container {
   font-weight: normal;
+}
+.repo-card {
+  margin: 35px;
 }
 #header {
   height: 15%;
