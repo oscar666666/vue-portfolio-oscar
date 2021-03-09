@@ -11,13 +11,22 @@
       </b-row>
       <b-row align-h="center">
         <b-col sm="8">
-      <b-card bg-variant="dark" border-variant="info" text-variant="white" title="Card Title">
-        <b-card-text>
-{{ info }}        </b-card-text>
-        <b-button pill class="btn btn-theme float-right" size="sm" href="#">Go somewhere</b-button>
-      </b-card>
-              </b-col>
 
+          <b-card
+            v-for="repo in repos"
+            v-bind:key="repo.id"
+            :title="repo.name"
+            :sub-title="repo.language"
+            bg-variant="dark"
+            border-variant="info"
+            text-variant="white"
+          >
+            <b-card-text> {{ repo.description }} </b-card-text>
+            <b-button pill class="btn btn-theme float-right" size="sm" href="#"
+              >{{repo.id}}</b-button
+            >
+          </b-card>
+        </b-col>
       </b-row>
     </div>
   </div>
@@ -48,27 +57,26 @@ h1 {
   font-weight: normal;
 }
 #header {
-  height: 15vh;
+  height: 15%;
 }
 #projects {
-  height: 100vh;
+  height: 100%;
   background-color: #343a40;
 }
-
 </style>
 <script>
-import axios from 'axios'
+import axios from "axios";
 export default {
   name: "projects",
   data() {
     return {
-      info: null,
+      repos: null,
     };
   },
-  mounted () {
+  mounted() {
     axios
-      .get('https://api.github.com/users/oscar666666/repos')
-      .then(response => (this.info = response))
+      .get("https://api.github.com/users/oscar666666/repos")
+      .then((response) => (this.repos = response.data));
   },
   components: {},
 };
