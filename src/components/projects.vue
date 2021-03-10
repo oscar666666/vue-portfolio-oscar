@@ -10,8 +10,6 @@
         <b-col sm="3"></b-col>
       </b-row>
       <b-row align-h="center">
-        <b-col sm="8"
-          ><!---->
           <b-card
             class="repo-card"
             v-for="repo in repos"
@@ -38,7 +36,6 @@
               >Code</b-button
             >
           </b-card>
-        </b-col>
       </b-row>
     </div>
   </div>
@@ -68,8 +65,10 @@ h1 {
 .container {
   font-weight: normal;
 }
+
 .repo-card {
   margin: 35px;
+  width :350px;
 }
 #header {
   height: 15%;
