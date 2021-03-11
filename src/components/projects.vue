@@ -10,8 +10,7 @@
         <b-col sm="3"></b-col>
       </b-row>
       <b-row align-h="center">
-          <b-card-group v-for="(repo, index) in repos"
-            v-bind:key="repo.id" >
+        <b-card-group v-for="(repo, index) in repos" v-bind:key="repo.id">
           <b-card
             class="repo-card"
             v-if="index < limit_by"
@@ -37,12 +36,21 @@
               >Code</b-button
             >
           </b-card>
-            </b-card-group>
-            </b-row>
-            <b-row align-h="center">
-            <a href="javascript:void(0)" class="mt-1"
-        @click="simple_toggle(default_limit, repos.length)">
-        <b-button variant="danger">{{ limit_by===4?'Show more': 'Hide more'}}</b-button></a>
+        </b-card-group>
+      </b-row>
+      <br />
+      <br />
+
+      <b-row align-h="center">
+        <a
+          href="javascript:void(0)"
+          class="mt-1"
+          @click="simple_toggle(default_limit, repos.length)"
+        >
+          <b-button variant="danger">{{
+            limit_by === 4 ? "Show more" : "Hide more"
+          }}</b-button></a
+        >
       </b-row>
     </div>
   </div>
@@ -75,7 +83,7 @@ h1 {
 
 .repo-card {
   margin: 35px;
-  width :350px;
+  width: 350px;
 }
 #header {
   height: 15%;
@@ -93,12 +101,14 @@ export default {
     return {
       repos: null,
       default_limit: 4,
-        limit_by: 4
+      limit_by: 4,
     };
-  },methods:{
-simple_toggle(default_limit, filters_length) {
-            this.limit_by = (this.limit_by === default_limit) ? filters_length : default_limit;
-        }
+  },
+  methods: {
+    simple_toggle(default_limit, filters_length) {
+      this.limit_by =
+        this.limit_by === default_limit ? filters_length : default_limit;
+    },
   },
   mounted() {
     axios
