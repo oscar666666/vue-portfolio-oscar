@@ -10,10 +10,11 @@
         <b-col sm="3"></b-col>
       </b-row>
       <b-row align-h="center">
+          <b-card-group v-for="(repo, index) in repos"
+            v-bind:key="repo.id" >
           <b-card
             class="repo-card"
-            v-for="repo in repos"
-            v-bind:key="repo.id"
+            v-if="index < limit_by"
             :title="repo.name"
             :sub-title="
               repo.language +
@@ -36,6 +37,11 @@
               >Code</b-button
             >
           </b-card>
+            </b-card-group>
+            </b-row>
+            <b-row align-h="center">
+            <a href="javascript:void(0)" class="mt-1"
+        @click="simple_toggle(default_limit, repos.length)">{{ limit_by===4?'Show more': 'Hide more'}}</a>
       </b-row>
     </div>
   </div>
@@ -85,7 +91,13 @@ export default {
   data() {
     return {
       repos: null,
+      default_limit: 4,
+        limit_by: 4
     };
+  },methods:{
+simple_toggle(default_limit, filters_length) {
+            this.limit_by = (this.limit_by === default_limit) ? filters_length : default_limit;
+        }
   },
   mounted() {
     axios
