@@ -41,7 +41,8 @@
             </b-row>
             <b-row align-h="center">
             <a href="javascript:void(0)" class="mt-1"
-        @click="simple_toggle(default_limit, repos.length)">{{ limit_by===4?'Show more': 'Hide more'}}</a>
+        @click="simple_toggle(default_limit, repos.length)">
+        <b-button variant="danger">{{ limit_by===4?'Show more': 'Hide more'}}</b-button></a>
       </b-row>
     </div>
   </div>
