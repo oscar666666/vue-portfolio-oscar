@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <navigation/>
+    <hero/>
     <about/>
     <experience/>
     <projects/>
@@ -33,6 +34,7 @@
 </style>
 <script>
 import Navigation from './components/navigation.vue' //import the component
+import Hero from './components/hero.vue' //import the component
 import About from './components/about.vue' //import the component
 import Experience from './components/experience.vue' //import the component
 import Projects from './components/projects.vue' //import the component
@@ -42,6 +44,7 @@ export default {
   name: 'App',
   components: {
     Navigation,  //instantiate it here
+    Hero,
     About,
     Experience,
     Projects,
