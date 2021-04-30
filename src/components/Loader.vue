@@ -23,7 +23,7 @@ export default {
       // Attaching a `pleaseWaitInstance` property (no need to declare)...
       if (!this.pleaseWaitInstance) {
         this.pleaseWaitInstance = pleaseWait({
-          logo: "../assets/Oscar_logo.png",
+          logo: "https://raw.githubusercontent.com/oscar666666/vue-portfolio-oscar/main/src/assets/Oscar_logo.png",
           backgroundColor: '#9974d5',
           loadingHtml: "<div class='spinner'><div class='double-bounce1'></div><div class='double-bounce2'></div></div>"
         })
