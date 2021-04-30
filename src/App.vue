@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+        <loading-screen :is-loading="isLoading"></loading-screen>
     <navigation/>
     <hero/>
     <about/>
@@ -39,16 +40,27 @@ import About from './components/about.vue' //import the component
 import Experience from './components/experience.vue' //import the component
 import Projects from './components/projects.vue' //import the component
 import Skills from './components/skills.vue' //import the component
-
+import Loader from "./components/Loader";
 export default {
   name: 'App',
   components: {
+        'loading-screen': Loader,
     Navigation,  //instantiate it here
     Hero,
     About,
     Experience,
     Projects,
     Skills
+  },
+  data(){
+    return{
+      isLoading: true
+    }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.isLoading = false
+    }, 2500)
   }
 }
 </script>
