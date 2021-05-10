@@ -48,7 +48,7 @@
           @click="simple_toggle(default_limit, repos.length)"
         >
           <b-button variant="danger">{{
-            limit_by === 4 ? "Show more" : "Hide more"
+            limit_by === 4 ? "Show more" : "Show less"
           }}</b-button></a
         >
       </b-row>
