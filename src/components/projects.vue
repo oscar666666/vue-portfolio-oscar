@@ -90,7 +90,7 @@ h1 {
 }
 #projects {
   height: 100%;
-  background-color: #343a40;
+  background-color: #1b2431;
 }
 </style>
 <script>

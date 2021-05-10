@@ -48,7 +48,7 @@ h1 {
 }
 #skills {
   height: 100vh;
-  background-color: #343a40;
+  background-color: #1b2431;
 }
 </style>
 <script>

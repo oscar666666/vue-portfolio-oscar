@@ -151,7 +151,7 @@ h1 {
 #about {
   height: 100%;
   vertical-align: top;
-  background-color: #343a40;
+  background-color: #1b2431;
 }
 </style>
 <script>

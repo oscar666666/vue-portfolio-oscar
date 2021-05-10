@@ -25,11 +25,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Install pleasewait.js
 
-'''
+```
 npm i -S please-wait
-'''
+```
 ### Deploy to github.io
 
-'''
+```
 ./deploy.sh
-'''
+```
+
+### install vuetimeline
+
+https://www.growthbunker.dev/vuetimeline/
