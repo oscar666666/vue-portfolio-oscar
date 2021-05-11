@@ -63,7 +63,7 @@ hr.footerhr {
 }
 #footer-text {
   font-size: 18px;
-  color: #0e6570;
+  color: #aedfd8;
 }
 </style>
 <script>
