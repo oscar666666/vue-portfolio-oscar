@@ -1,20 +1,33 @@
 <template>
   <div id="myfooter">
     <div class="container">
-      <br><br>
+      <br /><br />
       <b-row align-h="center">
-        <b-col sm="6">
+        <b-col sm="6" align="left">
           <h2 id="section-title">Oscar Lou</h2>
+          <p id="footer-text">
+            I'm currently looking for any new opportunities. Please hit me up if
+            you have a position that might be a fit for me. I will get back to
+            you as soon as possible!
+          </p>
         </b-col>
-        <b-col sm="3">
+        <b-col sm="4" align="left">
           <h2 id="section-title">Contact me:</h2>
-          <svg-icon type="mdi" :path="path"></svg-icon>
+          <p id="footer-text">
+            <svg-icon class="icon" type="mdi" :path="path"></svg-icon>
+            sseoscar4work@gmail.com
+          </p>
+          <a href="https://github.com/oscar666666" id="footer-text"
+            ><svg-icon class="icon" type="mdi" :path="path2"></svg-icon> Github
+            Link</a
+          >
         </b-col>
-        <b-col sm="3">
+        <b-col sm="2">
           <h2 id="section-title">footer</h2>
-        </b-col></b-row>
-        <hr class="footerhr">
-        <p> © 2021 Oscar Lou All rights reserved. </p>
+        </b-col></b-row
+      >
+      <hr class="footerhr" />
+      <p>© 2021 Oscar Lou All rights reserved.</p>
     </div>
   </div>
 </template>
@@ -41,18 +54,30 @@ hr.footerhr {
   border: 3px solid rgb(43, 66, 70);
   border-radius: 2px;
 }
+.icon {
+  width: 3em;
+  display: inline;
+  margin-right: 2px;
+  position: relative;
+  top: 0em;
+}
+#footer-text {
+  font-size: 18px;
+  color: #0e6570;
+}
 </style>
 <script>
-import { mdiEmail } from '@mdi/js'; 
-import SvgIcon from '@jamescoyle/vue-icon'
+import { mdiEmail } from "@mdi/js";
+import { mdiGithub } from "@mdi/js";
+import SvgIcon from "@jamescoyle/vue-icon";
 export default {
   name: "myfooter",
   data() {
     return {
-            path: mdiEmail,
-        };
+      path: mdiEmail,
+      path2: mdiGithub,
+    };
   },
-  components: {    SvgIcon
-},
+  components: { SvgIcon },
 };
 </script>
