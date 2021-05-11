@@ -7,7 +7,9 @@
     <experience/>
     <projects/>
     <skills/>
+    <myfooter/>
     <router-view/>
+
   </div>
 </template>
 
@@ -44,7 +46,9 @@ import About from './components/about.vue' //import the component
 import Experience from './components/experience.vue' //import the component
 import Projects from './components/projects.vue' //import the component
 import Skills from './components/skills.vue' //import the component
+import Myfooter from './components/myfooter.vue'
 import Loader from "./components/Loader";
+
 export default {
   name: 'App',
   components: {
@@ -54,7 +58,8 @@ export default {
     About,
     Experience,
     Projects,
-    Skills
+    Skills,
+    Myfooter,
   },
   data(){
     return{

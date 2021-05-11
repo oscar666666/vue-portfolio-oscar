@@ -37,3 +37,7 @@ npm i -S please-wait
 ### install vuetimeline
 
 https://www.growthbunker.dev/vuetimeline/
+
+### material design
+
+https://dev.materialdesignicons.com/getting-started/vuejs
