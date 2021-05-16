@@ -23,7 +23,7 @@
           >
         </b-col>
         <b-col sm="2">
-          <h2 id="section-title">footer</h2>
+          <h2 id="section-title">Resources</h2>
         </b-col></b-row
       >
       <hr class="footerhr" />
