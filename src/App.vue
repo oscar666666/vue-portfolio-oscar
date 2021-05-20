@@ -6,7 +6,7 @@
     <about/>
     <experience/>
     <projects/>
-            <githubRepoCard/>
+            <!--<githubRepoCard/>-->
 
     <skills/>
     <myfooter/>
@@ -50,7 +50,7 @@ import Projects from './components/projects.vue' //import the component
 import Skills from './components/skills.vue' //import the component
 import Myfooter from './components/myfooter.vue'
 import Loader from "./components/Loader";
-import githubRepoCard from './components/githubRepoCard.vue';
+//import githubRepoCard from './components/githubRepoCard.vue';
 
 
 export default {
@@ -64,7 +64,7 @@ export default {
     Projects,
     Skills,
     Myfooter,
-        githubRepoCard,
+        //githubRepoCard,
 
   },
   data(){
