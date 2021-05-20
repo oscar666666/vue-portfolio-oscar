@@ -6,6 +6,8 @@
     <about/>
     <experience/>
     <projects/>
+            <githubRepoCard/>
+
     <skills/>
     <myfooter/>
     <router-view/>
@@ -48,6 +50,8 @@ import Projects from './components/projects.vue' //import the component
 import Skills from './components/skills.vue' //import the component
 import Myfooter from './components/myfooter.vue'
 import Loader from "./components/Loader";
+import githubRepoCard from './components/githubRepoCard.vue';
+
 
 export default {
   name: 'App',
@@ -60,6 +64,8 @@ export default {
     Projects,
     Skills,
     Myfooter,
+        githubRepoCard,
+
   },
   data(){
     return{

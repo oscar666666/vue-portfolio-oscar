@@ -115,6 +115,7 @@ export default {
       .get("https://api.github.com/users/oscar666666/repos")
       .then((response) => (this.repos = response.data));
   },
-  components: {},
+  components: {
+  },
 };
 </script>
