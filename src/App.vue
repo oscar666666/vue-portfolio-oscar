@@ -1,24 +1,23 @@
 <template>
   <div id="app">
-        <loading-screen :is-loading="isLoading"></loading-screen>
-    <navigation/>
-    <hero/>
-    <about/>
-    <experience/>
-    <projects/>
-            <!--<githubRepoCard/>-->
+    <loading-screen :is-loading="isLoading"></loading-screen>
+    <navigation />
+    <hero />
+    <about />
+    <experience />
+    <projects />
+    <githubRepoCard />
 
-    <skills/>
-    <myfooter/>
-    <router-view/>
-
+    <skills />
+    <myfooter />
+    <router-view />
   </div>
 </template>
 
 <style>
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -42,40 +41,38 @@
 }
 </style>
 <script>
-import Navigation from './components/navigation.vue' //import the component
-import Hero from './components/hero.vue' //import the component
-import About from './components/about.vue' //import the component
-import Experience from './components/experience.vue' //import the component
-import Projects from './components/projects.vue' //import the component
-import Skills from './components/skills.vue' //import the component
-import Myfooter from './components/myfooter.vue'
+import Navigation from "./components/navigation.vue"; //import the component
+import Hero from "./components/hero.vue"; //import the component
+import About from "./components/about.vue"; //import the component
+import Experience from "./components/experience.vue"; //import the component
+import Projects from "./components/projects.vue"; //import the component
+import Skills from "./components/skills.vue"; //import the component
+import Myfooter from "./components/myfooter.vue";
 import Loader from "./components/Loader";
-//import githubRepoCard from './components/githubRepoCard.vue';
-
+import githubRepoCard from "./components/githubRepoCard.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-        'loading-screen': Loader,
-    Navigation,  //instantiate it here
+    "loading-screen": Loader,
+    Navigation, //instantiate it here
     Hero,
     About,
     Experience,
     Projects,
     Skills,
     Myfooter,
-        //githubRepoCard,
-
+    githubRepoCard,
   },
-  data(){
-    return{
-      isLoading: true
-    }
+  data() {
+    return {
+      isLoading: true,
+    };
   },
-  mounted () {
+  mounted() {
     setTimeout(() => {
-      this.isLoading = false
-    }, 2500)
-  }
-}
+      this.isLoading = false;
+    }, 2500);
+  },
+};
 </script>

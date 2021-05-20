@@ -97,6 +97,11 @@ body {
   align-content: space-between;
   color: #0d1117;
 }
+.repocard:hover{
+  box-shadow: 0px 0px 0;
+
+
+}
 #name {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
