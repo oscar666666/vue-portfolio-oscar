@@ -7,7 +7,7 @@
         <b-col sm="0"> </b-col>
 
         <b-col sm="9">
-          <h2 id="section-title">5. Education & Certification</h2>
+          <h2 id="section-title">4. Education & Certification</h2>
 
           <br />
 

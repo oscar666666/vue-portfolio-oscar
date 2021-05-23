@@ -60,7 +60,7 @@ h1 {
   background: url("../assets/PXL_20210303_050253767.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;/*remove this for ios*/
   background-size: 100% 100%;
   font-weight: 400;
   padding: 0rem 5.6rem;

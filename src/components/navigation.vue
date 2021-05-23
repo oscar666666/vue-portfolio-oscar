@@ -25,6 +25,8 @@
         <b-nav-item href="#projects">2.Projects</b-nav-item>
 
         <b-nav-item href="#skills">3.Skills</b-nav-item>
+
+        <b-nav-item href="#eduandcert">4.Edu & Cert</b-nav-item>
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>

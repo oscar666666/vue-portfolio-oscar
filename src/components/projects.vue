@@ -9,6 +9,7 @@
         </b-col>
         <b-col sm="3"></b-col>
       </b-row>
+      <!--
       <b-row align-h="center">
         <b-card-group v-for="(repo, index) in repos" v-bind:key="repo.id">
           <b-card
@@ -51,7 +52,7 @@
             limit_by === 4 ? "Show more" : "Show less"
           }}</b-button></a
         >
-      </b-row>
+      </b-row>-->
     </div>
   </div>
 </template>
@@ -94,26 +95,26 @@ h1 {
 }
 </style>
 <script>
-import axios from "axios";
+//import axios from "axios";
 export default {
   name: "projects",
   data() {
     return {
-      repos: null,
-      default_limit: 4,
-      limit_by: 4,
+      //repos: null,
+      //default_limit: 4,
+      //limit_by: 4,
     };
   },
   methods: {
-    simple_toggle(default_limit, filters_length) {
-      this.limit_by =
-        this.limit_by === default_limit ? filters_length : default_limit;
-    },
+    //simple_toggle(default_limit, filters_length) {
+    //  this.limit_by =
+    //    this.limit_by === default_limit ? filters_length : default_limit;
+    //},
   },
   mounted() {
-    axios
-      .get("https://api.github.com/users/oscar666666/repos")
-      .then((response) => (this.repos = response.data));
+    //axios
+    //  .get("https://api.github.com/users/oscar666666/repos")
+    //  .then((response) => (this.repos = response.data));
   },
   components: {
   },

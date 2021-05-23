@@ -9,6 +9,7 @@
     <githubRepoCard />
 
     <skills />
+    <eduandcert/>
     <myfooter />
     <router-view />
   </div>
@@ -50,7 +51,7 @@ import Skills from "./components/skills.vue"; //import the component
 import Myfooter from "./components/myfooter.vue";
 import Loader from "./components/Loader";
 import githubRepoCard from "./components/githubRepoCard.vue";
-
+import Eduandcert from "./components/eduandcert.vue";
 export default {
   name: "App",
   components: {
@@ -61,6 +62,7 @@ export default {
     Experience,
     Projects,
     Skills,
+    Eduandcert,
     Myfooter,
     githubRepoCard,
   },
