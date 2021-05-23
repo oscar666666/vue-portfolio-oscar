@@ -116,6 +116,7 @@ body {
  }
 .repocard:hover {
   box-shadow: 0px 0px 0;
+  background-color: #101318;
 }
 #name {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
