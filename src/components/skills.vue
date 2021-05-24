@@ -4,17 +4,15 @@
       <br /><br /><br />
       <br />
       <b-row align-h="center">
-        <b-col sm="6">
-          <h2 id="section-title">3. skills</h2>
+        <b-col sm="0"> </b-col>
+
+        <b-col sm="9">
+          <h2 id="section-title">3. Skills</h2>
         </b-col>
-        <b-col sm="3"></b-col>
       </b-row>
-      <b-row align-h="center">
-        <b-col sm="8">
 
           
-        </b-col>
-      </b-row>
+
     </div>
   </div>
 </template>
@@ -29,13 +27,7 @@ body {
 h1 {
   text-align: left;
 }
-#introduce-text {
-  font-size: 20px;
-  color: #c4babe;
-}
-#contactme {
-  color: #2da07a;
-}
+
 #section-title {
   color: #2da07a;
   text-align: left;
@@ -47,7 +39,7 @@ h1 {
   height: 15vh;
 }
 #skills {
-  height: 100vh;
+height: 100%;
   background-color: #1b2431;
 }
 </style>
