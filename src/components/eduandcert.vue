@@ -104,7 +104,7 @@ export default {
         {
           icon: "UR_Logo_Secondary_Stacked Full_Colour_RGB",
           certname: "University of Regina",
-          subtitle: "Bachelor of Applied Sience - Software Systems Engineering",
+          subtitle: "Bachelor of Applied Science - Software Systems Engineering",
           time: "2015-2020",
         },
         {
