@@ -20,7 +20,7 @@
 
         <b-col sm="3">
           <b-img
-            src="../assets/IMG_20200813_0930581.png"
+            src="https://raw.githubusercontent.com/oscar666666/vue-portfolio-oscar/main/src/assets/IMG_20200813_0930581.png"
             rounded
             fluid-grow
             alt="profile image"
