@@ -10,17 +10,16 @@
           <h2 id="section-title">3. Skills</h2>
           <br />
       <br />
-          <div>
+          
             <VueSlickCarousel  v-bind="settings">
               <div v-for="(images, index) in skillsimg" :key="index">
-                <i id="devicon" :class="images.image"  width="100px"
-              height="100px"></i>
+                <i id="devicon" :class="images.image" ></i>
                 <!--<img :src="images.image" width="100px"
               height="100px" alt="" />-->
               </div>
             </VueSlickCarousel>
             
-          </div>
+          
            
            
         </b-col>
@@ -55,7 +54,7 @@ h1 {
   background-color: #1b2431;
 }
 #devicon {
-  font-size: 5rem
+  font-size: 4rem
 }
 </style>
 <script>
@@ -108,12 +107,13 @@ export default {
         },
       ],
       settings: {
-        centerMode: true,
-        centerPadding: "20px",
         focusOnSelect: true,
-        infinite: true,
-        slidesToShow: 5,
-        speed: 500,
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  speed: 500,
+  arrows: false,
+          dots: false,
       },
     };
   },
